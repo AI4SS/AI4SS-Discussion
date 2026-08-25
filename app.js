@@ -1,10 +1,9 @@
-const LEVELS = ["Perception", "Understanding", "Generation", "Simulation", "Other"];
+const DEFAULT_TRACKS = ["Logical Reasoning", "Social Simulation", "Social Understanding", "Multimodal Prediction"];
 const COLORS = {
-  Perception: "#528fc1",
-  Understanding: "#62a982",
-  Generation: "#4c9a98",
-  Simulation: "#274f70",
-  Other: "#866aa7",
+  "Logical Reasoning": "#7659a8",
+  "Social Simulation": "#274f70",
+  "Social Understanding": "#62a982",
+  "Multimodal Prediction": "#528fc1",
 };
 
 const state = {
@@ -16,6 +15,7 @@ const state = {
   year: "",
   sort: "recent",
   visible: 36,
+  tracks: [],
 };
 
 const selectors = {
@@ -58,7 +58,8 @@ function hexToRgba(hex, alpha) {
 
 function buildFilters(metadata) {
   selectors.levelFilters.replaceChildren();
-  LEVELS.filter((level) => metadata.levelCounts[level]).forEach((level) => {
+  state.tracks = metadata.trackOrder || DEFAULT_TRACKS.filter((track) => metadata.levelCounts[track]);
+  state.tracks.forEach((level) => {
     const button = element("button", `level-filter ${levelClass(level)}`);
     button.type = "button";
     button.dataset.level = level;
@@ -83,14 +84,10 @@ function buildFilters(metadata) {
     selectors.year.append(option);
   });
 
-  document.querySelectorAll("[data-level-count]").forEach((node) => {
-    const count = metadata.levelCounts[node.dataset.levelCount] || 0;
-    node.textContent = `${count} unique selected papers`;
-  });
 }
 
 function buildTimeline() {
-  const core = LEVELS.slice(0, 4);
+  const core = state.tracks;
   const years = [...new Set(state.papers.map((paper) => paper.year).filter((year) => year && year >= 2016))].sort((a, b) => a - b);
   const counts = new Map();
   let max = 1;
@@ -154,6 +151,7 @@ function sorted(papers) {
 function paperCard(paper) {
   const article = element("article", "paper-card");
   article.dataset.level = paper.level;
+  article.style.setProperty("--level-color", COLORS[paper.level] || "#60666f");
 
   const meta = element("div", "paper-meta");
   meta.append(element("span", "", paper.level));
@@ -173,6 +171,13 @@ function paperCard(paper) {
 
   const tags = element("div", "paper-tags");
   [paper.task, paper.venue].filter(Boolean).forEach((value) => tags.append(element("span", "tag", value)));
+  if (paper.repoUrl) {
+    const codeLink = element("a", "tag code-tag", "Code ↗");
+    codeLink.href = paper.repoUrl;
+    codeLink.target = "_blank";
+    codeLink.rel = "noopener noreferrer";
+    tags.append(codeLink);
+  }
   article.append(tags);
   return article;
 }

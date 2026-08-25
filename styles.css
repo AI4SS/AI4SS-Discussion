@@ -343,6 +343,8 @@ h1 {
 .paper-summary { margin-bottom: 1rem; font-size: .82rem; line-height: 1.5; }
 .paper-tags { margin-top: auto; display: flex; flex-wrap: wrap; gap: .35rem; }
 .tag { padding: .22rem .45rem; border-radius: .28rem; background: #f1f1ee; color: #484d54; font-size: .65rem; }
+.code-tag { color: var(--navy); font-weight: 800; text-decoration: none; }
+.code-tag:hover, .code-tag:focus-visible { text-decoration: underline; }
 .load-more-wrap { display: flex; justify-content: center; padding-top: 1.4rem; }
 .empty-state { grid-column: 1 / -1; padding: 4rem 1rem; text-align: center; color: var(--muted); }
 

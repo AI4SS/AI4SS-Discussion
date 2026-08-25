@@ -9,10 +9,10 @@ Static GitHub Pages homepage and interactive paper explorer for:
 ## Contents
 
 - `index.html` — deployed survey homepage.
-- `assets/css/styles.css` — responsive visual design.
-- `assets/js/app.js` — client-side timeline, search, filters, and sorting.
-- `assets/data/papers.json` — normalized unique selected-paper collection.
-- `assets/img/` — survey overview and taxonomy figures.
+- `styles.css` — responsive visual design.
+- `app.js` — client-side timeline, search, filters, and sorting.
+- `papers.json` — AI4SS-owned paper collection.
+- `overview.png` and `category-architecture.png` — survey overview and taxonomy figures.
 
 ## Local preview
 
@@ -25,9 +25,9 @@ Open `http://127.0.0.1:8080/`.
 ## Sources and attribution
 
 - Paper: <https://doi.org/10.13140/RG.2.2.21157.87528>
-- Living collection: <https://github.com/sait-crypto/Awesome-Social-Intelligence-Modeling-System>
+- Paper repositories: <https://github.com/AI4SS>
 - Paper and figures are reported by ResearchGate as **CC BY-NC-ND 4.0**. They remain under the authors' copyright.
-- The normalized browser data is derived from the public companion repository and preserves outgoing links to the original papers.
+- The interactive browser includes only papers represented by public repositories owned by the AI4SS GitHub account.
 
 ## Deployment
 
