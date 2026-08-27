@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://juehyx.github.io/social-intelligence-modeling-survey/sitemap.xml
+Sitemap: https://ai4ss.github.io/social-intelligence-modeling-survey/sitemap.xml
