@@ -18,55 +18,69 @@
 <body>
   <a class="skip-link" href="#paper-explorer">Skip to paper explorer</a>
 
-  <header class="site-header" id="top">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Social Intelligence Modeling home">
-        <span class="brand-mark">SIM</span>
-        <span>Survey</span>
+  <aside class="side-nav" aria-label="Page navigation">
+    <div class="nav-inner">
+      <a class="nav-title" href="#top" aria-label="Social Intelligence Modeling survey — home">
+        <span class="wm">S<span class="wm-a">I</span>M</span>
+        <span class="wm-sub">Survey</span>
       </a>
-      <nav aria-label="Primary navigation">
+      <nav>
         <a href="#overview">Overview</a>
+        <a href="#community">Community</a>
         <a href="#definition">Definition</a>
         <a href="#taxonomy">Taxonomy</a>
         <a href="#timeline">Timeline</a>
         <a href="#paper-explorer">Paper list</a>
-        <a href="https://github.com/world-action-models/awesome-world-action-models/discussions/2" target="_blank" rel="noopener noreferrer">Open WeChat</a>
       </nav>
     </div>
-  </header>
+  </aside>
 
-  <main>
-    <section class="hero section-shell reveal" aria-labelledby="paper-title">
-      <p class="eyebrow">A comprehensive survey · 2026</p>
-      <h1 id="paper-title">Social Intelligence Modeling:<br>From Social Perception to Social Simulation</h1>
-      <p class="hero-subtitle">A Comprehensive Survey from Social Perception to Social Simulation</p>
-      <p class="hero-kicker">From recognizing <em>what</em> happens to exploring <em>what could happen</em>.</p>
-
-      <p class="authors">
-        Zikai Song<sup>*</sup>, Xiajie Li<sup>*</sup>, Yunyao Zhang, Xinglang Zhang, Wei Yang, Junqing Yu
-      </p>
-      <p class="affiliation">Huazhong University of Science and Technology · <sup>*</sup>Equal contribution</p>
-
-      <p class="hero-abstract">
-        Social Intelligence Modeling (SIM) unifies how AI perceives social signals, understands individual and collective behavior,
-        generates socially situated outputs, and simulates the evolution of social systems.
-      </p>
-
-      <div class="action-row" aria-label="Paper links">
-        <a class="button primary" href="https://doi.org/10.13140/RG.2.2.21157.87528">Paper <span aria-hidden="true">↗</span></a>
-        <a class="button" href="https://github.com/AI4SS">AI4SS papers <span aria-hidden="true">↗</span></a>
-        <a class="button" href="https://github.com/Juehyx/social-intelligence-modeling-survey">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-
-      <div class="hero-stats" aria-label="Survey scope">
-        <div><strong>1</strong><span>survey core</span></div>
-        <div><strong>4</strong><span>research levels</span></div>
-        <div><strong>8</strong><span>AI4SS papers shown</span></div>
-        <div><strong>4</strong><span>progressive levels</span></div>
+  <main id="top" class="page-shell">
+    <section class="paper-hero" id="overview" aria-labelledby="paper-title">
+      <div class="hero-text academic-title-block">
+        <h1 id="paper-title">Social Intelligence Modeling:<br>A Comprehensive Survey</h1>
+        <p class="hero-subtitle">From Social Perception to Social Simulation</p>
+        <p class="author-list">Zikai Song, Xiajie Li, Yunyao Zhang, Xinglang Zhang, Wei Yang, Junqing Yu</p>
+        <p class="affiliation-line">Huazhong University of Science and Technology</p>
+        <p class="hero-summary">
+          A unified survey of how AI perceives social signals, understands individual and collective behavior,
+          generates socially situated outputs, and simulates the evolution of social systems.
+        </p>
+        <div class="hero-links" aria-label="Paper links">
+          <a class="hero-link hero-link--primary" href="https://doi.org/10.13140/RG.2.2.21157.87528">Paper <span aria-hidden="true">↗</span></a>
+          <a class="hero-link" href="https://github.com/AI4SS">AI4SS papers</a>
+          <a class="hero-link" href="https://github.com/Juehyx/social-intelligence-modeling-survey">GitHub</a>
+          <a class="hero-link" href="https://github.com/Juehyx/social-intelligence-modeling-survey/discussions">Discussions</a>
+        </div>
       </div>
     </section>
 
-    <section class="figure-band" id="overview" aria-labelledby="overview-title">
+    <section class="content-section community-section" id="community" aria-labelledby="community-title">
+      <div class="section-heading">
+        <p class="eyebrow">Community</p>
+        <h2 id="community-title">Discussions and WeChat group are open.</h2>
+        <p>
+          Use GitHub Discussions to ask questions, suggest missing papers, discuss the survey taxonomy,
+          and connect with researchers working on AI for Social Science.
+        </p>
+      </div>
+      <div class="community-grid">
+        <article class="community-card">
+          <p class="mini-label">GitHub Discussions</p>
+          <h3>Join the survey discussion</h3>
+          <p>Introduce yourself, ask questions, or suggest updates to the AI4SS paper list and taxonomy.</p>
+          <a class="community-link" href="https://github.com/Juehyx/social-intelligence-modeling-survey/discussions">Open discussions <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="community-card community-card--accent">
+          <p class="mini-label">WeChat Group</p>
+          <h3>Join the AI4SS Survey WeChat group</h3>
+          <p>Scan the QR code in the discussion thread to join the Chinese community chat for AI4SS survey readers.</p>
+          <a class="community-link" id="wechat-discussion-link" href="https://github.com/Juehyx/social-intelligence-modeling-survey/discussions/1">Open WeChat thread <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="figure-band" id="survey-overview" aria-labelledby="overview-title">
       <div class="section-shell">
         <div class="section-heading wide-heading">
           <p class="eyebrow">Overview</p>
@@ -207,32 +221,12 @@
       </div>
     </section>
 
-    <section class="section-shell reveal wechat-section" id="open-wechat" aria-labelledby="wechat-title">
-      <div class="section-heading wechat-heading">
-        <p class="eyebrow">Open WeChat</p>
-        <h2 id="wechat-title">AI4SS Introduction and Communication Hub</h2>
-        <p class="wechat-subtitle">This is a brief introduction to AI4SS, and we will continuously update the research pace and resources for this direction.</p>
-      </div>
-      <a
-        class="button primary wechat-cta"
-        href="https://github.com/world-action-models/awesome-world-action-models/discussions/2"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open WeChat thread
-      </a>
-      <h3 class="wechat-subtitle-title">Join the AI4SS Survey WeChat group</h3>
-      <p class="wechat-subtext">
-        Scan the QR code in the discussion thread to join the Chinese community chat for AI4SS survey readers.
-      </p>
-    </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="section-shell footer-shell">
       <p>Social Intelligence Modeling survey homepage</p>
-      <a href="https://github.com/world-action-models/awesome-world-action-models/discussions/2" target="_blank" rel="noopener noreferrer">Open WeChat thread</a>
+      <a href="https://github.com/Juehyx/social-intelligence-modeling-survey/discussions/1">Open WeChat thread</a>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
