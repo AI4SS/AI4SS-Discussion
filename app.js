@@ -29,8 +29,6 @@ const selectors = {
   resultCount: document.querySelector("#result-count"),
   loadMore: document.querySelector("#load-more"),
   timeline: document.querySelector("#timeline-matrix"),
-  copyBibtex: document.querySelector("#copy-bibtex"),
-  bibtex: document.querySelector("#bibtex"),
 };
 
 function element(tag, className, text) {
@@ -233,15 +231,6 @@ selectors.clear.addEventListener("click", () => {
   render();
 });
 selectors.loadMore.addEventListener("click", () => { state.visible += 36; render(); });
-selectors.copyBibtex.addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(selectors.bibtex.textContent);
-    selectors.copyBibtex.textContent = "Copied";
-    setTimeout(() => { selectors.copyBibtex.textContent = "Copy BibTeX"; }, 1600);
-  } catch {
-    selectors.copyBibtex.textContent = "Select and copy";
-  }
-});
 
 async function init() {
   try {
