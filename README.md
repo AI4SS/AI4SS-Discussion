@@ -13,6 +13,8 @@ Static GitHub Pages homepage and interactive paper explorer for:
 - `app.js` — client-side timeline, search, filters, and sorting.
 - `papers.json` — AI4SS-owned paper collection.
 - `overview.png` and `category-architecture.png` — survey overview and taxonomy figures.
+- `ai4ss-wechat-cover.jpg` — QR/WeChat cover image used on the custom Open WeChat page.
+- `wechat.html` — custom AI4SS WeChat landing page.
 
 ## Local preview
 

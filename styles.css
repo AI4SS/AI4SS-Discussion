@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7f9fc;
+  --bg: #ffffff;
   --surface: #ffffff;
   --surface-soft: #f2f5fb;
   --text: #18202c;
@@ -82,7 +82,7 @@ select {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 249, 252, 0.84);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(10px);
 }
@@ -305,6 +305,44 @@ p {
   color: var(--muted);
   margin: 0 0 0.95rem;
   font-size: 0.96rem;
+}
+
+.wechat-cta {
+  margin-bottom: 0.8rem;
+}
+
+.wechat-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.8rem 0 4rem;
+}
+
+.wechat-page .page-intro {
+  margin-bottom: 1.1rem;
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.wechat-cover {
+  width: 100%;
+  max-width: 820px;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.wechat-cover img {
+  width: 100%;
+  display: block;
+}
+
+.wechat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .section-heading {
