@@ -229,10 +229,6 @@ p {
   margin-top: 1.4rem;
 }
 
-.action-row-left {
-  justify-content: flex-start;
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -296,6 +292,12 @@ p {
 .source-section,
 .wechat-section {
   padding-block: var(--section-y);
+}
+
+.wechat-subtext {
+  max-width: 760px;
+  color: var(--muted);
+  margin: 0 0 0.95rem;
 }
 
 .section-heading {
@@ -657,28 +659,6 @@ p {
 
 .footer-shell a {
   color: #334155;
-}
-
-.wechat-main {
-  padding: 2.6rem 0 4.2rem;
-}
-
-.wechat-main .page-lead {
-  max-width: 760px;
-}
-
-.wechat-image-wrap {
-  margin: 1rem 0 1.2rem;
-  max-width: 860px;
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-
-.wechat-page .site-header,
-.wechat-page .nav-shell {
-  width: min(var(--content), calc(100% - 2 * var(--gutter)));
 }
 
 .reveal {
