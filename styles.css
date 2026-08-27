@@ -294,10 +294,17 @@ p {
   padding-block: var(--section-y);
 }
 
+.wechat-subtitle-title {
+  margin: 0;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
 .wechat-subtext {
   max-width: 760px;
   color: var(--muted);
   margin: 0 0 0.95rem;
+  font-size: 0.96rem;
 }
 
 .section-heading {
