@@ -309,40 +309,17 @@ p {
 
 .wechat-cta {
   margin-bottom: 0.8rem;
+  display: inline-flex;
 }
 
-.wechat-page {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 2.8rem 0 4rem;
-}
-
-.wechat-page .page-intro {
-  margin-bottom: 1.1rem;
+.wechat-subtitle {
+  margin: 0;
+  max-width: 780px;
   color: var(--muted);
-  max-width: 760px;
 }
 
-.wechat-cover {
-  width: 100%;
-  max-width: 820px;
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  background: #fff;
-  box-shadow: var(--shadow);
-}
-
-.wechat-cover img {
-  width: 100%;
-  display: block;
-}
-
-.wechat-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.wechat-heading {
+  margin-bottom: 0.8rem;
 }
 
 .section-heading {
