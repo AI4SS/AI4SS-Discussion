@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ai4ss.github.io/social-intelligence-modeling-survey/sitemap.xml
